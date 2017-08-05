@@ -1,0 +1,184 @@
+@import 'base/utilities';
+
+.top_nav_container {
+    background: $gray;    
+}
+
+.top_nav {
+    display: inline-block;
+	padding: 7px 3.5px;
+    color: $black;
+    font-size: 9pt;
+    &:first-child {
+        padding: 7px 3.5px 7px 0;
+    }
+}
+
+.entry {
+    text-align: center;
+}
+
+.middle_container {
+	padding: 27px 0 12px;
+}
+
+.sprite-logo {
+	float: left;
+    margin-right: 4px;
+}
+
+.name_magazine {
+	float: left;
+    font-weight: bold;
+
+    .title {
+        font-size: 20pt;
+        margin-top: 5px;
+    }
+
+    .subtitle {
+        font-size: 7pt;
+        color: $gray_dark;
+        text-align: right;
+        margin-top: -5px;
+    }
+}
+
+.search {
+	position: relative;
+    margin-left: 37px;
+    margin-top: 3px;
+}
+
+.search_input {
+	width: 91%;
+    height: 43px;
+    background: $gray;
+}
+.search_icon {
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABJUlEQVQ4T7WUgTEEQRBF30VACESADMhABogAESACMkAEiAARuBCIABmod9Wt5nZnhnJrqrZ2aqf7Tffv7p0x8Zo1eBvAAbBbnN8Dt8BHL4Ya8Ao4Dqc34BXYBtYCdgrctKBDoIZG9gCcBCx9jdbLtgCh7kerBB4C15GW+9paB54Cuhf7JbsSqDY+6tdbns8Dtj80TKAavfRSGTimNKMa5AdvugOqaVTCPQfOgJ2I9tvk34CTp2zIFuQd2PxFUdT7GWgWRUa2jYIfddrmMRp9pJ8+rcZ2zC4GgtvYlwEzGwto+zT7MA/K0dNRJzW2qT/DKMdwBO39HJQgfw7Os2DlsLGdliq0BfyhLouIq9C/Ar2wCl0FWELdK898VWBCfS8qPgVwSe8vc9dGFR12nYIAAAAASUVORK5CYII=") no-repeat;
+    position: absolute;
+    top: 12px;
+    right: 32px;
+}
+
+.phone {
+    margin: 6px 10px 0;
+}
+
+.phone .subtitle {
+    font-size: 7.5pt;
+    font-weight: bold;
+    color: $gray_dark;
+}
+
+.label_sale {
+    margin: 7px 0 0 33px;	
+
+    .title{
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 8.39pt;
+    }
+}
+
+.favorite_compare {
+    margin: 15px 0 0 43px;	
+    
+    .sprite-compare {
+	margin-left: 17px;
+    }
+    .sprite{
+        display: inline-block;
+        position: relative;
+        &:after {
+            content: '0';
+            display: block;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            border-radius: 50%;
+            text-align: center;
+            background: $gray;
+            font-weight: bold;
+            position: absolute;
+            top: -13px;
+            right: -15px;
+            font-size: 8pt;
+        }
+    }
+}
+
+.basket {
+    font-weight: bold;
+    margin-top: 5px;
+    
+    .basket_text {
+        float: left;
+        margin: 6px 0 0 15px;
+        .title {
+            font-size: 10pt;
+        }
+
+        .subtitle {
+            font-size: 8pt;
+            color: $gray_dark;
+        }
+    }
+    
+    .sprite-basket {
+        float: left;
+        position: relative;
+        &:after {
+            content: '0';
+            display: block;
+            width: 23px;
+            height: 23px;
+            line-height: 23px;
+            border-radius: 50%;
+            text-align: center;
+            background: $orange;
+            font-weight: bold;
+            position: absolute;
+            top: -6px;
+            right: -10px;
+            font-size: 8pt;
+            color: $white;
+        }
+    }
+}
+
+nav {
+    .container-fluid {
+	    background: $blue;
+    }
+    
+    .sprite-menu {
+        float: left;
+        margin-top: 24px;
+    }
+    
+    ul {
+        padding-left: 0;
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
+    
+    a {
+        float: left;
+        text-transform: uppercase;
+        padding: 23px 14.5px;
+        font-weight: bold;
+        transition: all 0.5s ease;
+        &:hover {
+            background: $blue - 20;
+        }
+    }
+    
+    li:last-child a {
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,185 @@
+@import "utilities";
+
+html{
+	font-size: 14px;
+}
+
+html, .pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] {
+	font-family: $semib, $lig, $bold, sans-serif;
+}
+body{
+	background-color: $white;
+}
+
+a{
+	text-decoration: none;
+    color: $white;
+}
+
+p{
+    margin: 0;
+}
+
+ol, ul {
+  list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button, input{
+	outline: none;
+}
+
+button{
+	border: 0;
+	cursor: pointer;
+	&:hover{
+		opacity: 0.8;
+	}
+}
+
+input{
+	border: 0;
+	box-sizing: border-box;
+    border-radius: 3px;
+    padding: 15px;
+    color: $gray_dark;
+}
+
+.btn_orange {
+    display: inline-block;
+    background: $orange;
+    padding: 7px 12px;
+    transition: all 0.3s ease;
+    &:hover {
+        background: $orange_dark;
+    }
+}
+
+.btn_orange_dark {
+    display: inline-block;
+    background: $orange_dark;
+    padding: 7px 12px;
+    transition: all 0.3s ease;
+    &:hover {
+        background: $orange_dark - 20;
+    }
+}
+
+.btn_gray {
+    display: inline-block;
+    background: $gray_dark;
+    padding: 7px 12px;
+    transition: all 0.3s ease;
+    &:hover {
+        background: $gray_dark - 20;
+    }
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mark {
+    padding: 1px 10px;
+    color: $white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    font-size: 8pt;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    &:after {
+        content: '';
+        width: 5px;
+        height: 5px;
+        display: block;
+        border-radius: 50%;       
+        position: absolute;
+        top: 2.5px;
+        right: -5px;
+        background: $white;
+    }
+}
+
+.mark_blue {
+	background: $blue;
+    &:after {
+        border: 5px solid $blue;
+    }
+}
+
+.mark_green {
+	background: $green;
+    &:after {
+        border: 5px solid $green;
+    }
+}
+
+.mark_purpur {
+	background: $purpur;
+    &:after {
+        border: 5px solid $purpur;
+    }
+}
+
+.mark_orange {
+    text-transform: none;
+    background: $orange;
+    margin-bottom: 0;
+    &:after {
+        border: 5px solid $orange;
+        right: 106px;
+    }
+}
+
+.title {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.title_small {
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.orange_border_dashed {
+    color: $orange;
+    border-bottom: 1px dashed $orange;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}

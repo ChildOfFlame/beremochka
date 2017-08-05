@@ -1,0 +1,39 @@
+/* Colors */
+$white: #fff;
+$black: #000;
+$gray: #e2e2e2;
+$orange: #e67e22;
+$orange_dark: #d35400;
+$blue: #0d85f7;
+$gray_dark: #888888;
+$pink_light: #f4f4f4;
+$green: #63a53a;
+$purpur: #bd29f5;
+
+/* font-family */
+$bold: "Proxima-Nova-Bold";
+$lig: "Proxima-Nova-Light";
+$semib: "Proxima-Nova-Semibold";
+$ubun: Ubuntu, sans-serif;
+
+/* Fonts */ 
+@font-face {
+	font-family: 'Proxima-Nova-Light';
+	src: url('../fonts/Proxima-Nova-Light.otf');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima-Nova-Bold';
+	src: url('../fonts/Proxima-Nova-Bold.otf');
+	font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Proxima-Nova-Semibold';
+  src: url('../fonts/Proxima-Nova.otf');
+  font-weight: 300;
+  font-style: italic;
+}

@@ -1,0 +1,193 @@
+.tabs_slider {
+    padding: 71px 0;
+    .title,
+    .tabs_arrow_slider {
+        margin-bottom: 30px;
+    }
+    .pure-u-3-4 {
+        position: relative;
+        .tabs_arrow_slider {
+            height: 15px;
+            ul {
+                position: absolute;
+                top: 22px;
+                right: 0;
+                li {
+                    display: none;
+                    &.active {
+                        display: block;
+                    }
+                    .tabs_arrow {
+                        width: auto;
+                        height: auto;
+                        background-size: auto;
+                        background-image: none;
+                        position: static;
+                        display: inline-block;
+                        border: 1px solid $gray;
+                        border-radius: 2px;
+                        padding: 10px 12px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+    .tabs {
+        width: 215px;
+        height: 330px;
+        background: $pink_light;
+        padding: 23px;
+        ul {
+            margin-bottom: 40px;
+            li {
+                padding: 25px 0 25px 20px;
+                opacity: 0.55;
+                transition: all 0.3s ease;
+                &.active,
+                &:hover {
+                    opacity: 1;
+                    background: $white;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+                &.active {
+                    cursor: default;
+                }
+                .tabs_icon {
+                    float: left;
+                    margin-right: 15px;
+                    margin-top: -2px;
+                }
+            }
+        }
+        .orange_border_dashed {
+            font-size: 8.5pt;
+            margin-left: 21px;
+        }
+    }
+    .tabs_slider_wrap li {
+        display: none;
+        &.active {
+            display: block;
+        }
+        .swiper-wrapper {
+            padding: 10px 0;
+            box-sizing: border-box;
+        }
+        .item_goods {
+            height: 352px;
+            padding: 10px;
+            border: 2px solid $gray;
+            border-radius: 2px;
+            position: relative;
+            transition: all 0.3s ease;
+            &:hover {
+                box-shadow: 0 0 10px $gray_dark;
+                z-index: 20;
+            }
+            &:hover .sprite-favorite {
+                background-position: -130px -63px;
+            }
+            &:hover .sprite-compare_gray {
+                background-position: -48px -63px;
+            }
+            .img {
+                box-shadow: 0 5px 5px $gray;
+                margin: 30px 0 20px;
+                text-align: center;
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+            .marks {
+                position: absolute;
+                top: 5px;
+                left: 0;
+            }
+            .comparison {
+                position: absolute;
+                right: 10px;
+                top: 5px;
+                .sprite {
+                    margin-top: 5px;
+                }
+            }
+            .name_goods {
+                text-align: center;
+                margin-bottom: 20px;
+                a {
+                    color: $black;
+                    font-size: 9pt;
+                }
+            }
+            .price_goods {
+                text-align: center;
+                font-weight: bold;
+                font-size: 8pt;
+                margin: 20px 0;
+                span {
+                    font-size: 14pt;
+                }
+            }
+            .status_goods {
+                text-align: center;
+                .has_sklad {
+                    font-size: 8pt;
+                    color: $green;
+                }
+            }
+            .control_panel {
+                text-align: center;
+                .buy {
+                    font-weight: bold;
+                    .quantity {
+                        input {
+                            width: 40px;
+                            height: 30px;
+                            border: 1px solid $gray;
+                            padding: 0;
+                            text-align: center;
+                            vertical-align: top;
+                            border-radius: 0;
+                            background: $pink_light;
+                        }
+                        .symbol {
+                            width: 25px;
+                            height: 30px;
+                            line-height: 28px;
+                            border: 1px solid $gray;
+                            border-radius: 2px 0 0 2px;
+                            color: $gray_dark;
+                            display: inline-block;
+                            text-align: center;
+                            box-sizing: border-box;
+                            cursor: pointer;
+                            &.minus {
+                                border-radius: 2px 0 0 2px;
+                                margin-right: -4px;
+                                border-right: none;
+                            }
+                            &.plus {
+                                border-radius: 0 2px 2px 0;
+                                margin-left: -4px;
+                                border-left: none;
+                            }
+                        }
+                    }
+                    .in_basket {
+                        font-size: 9pt;
+                        vertical-align: top;
+                        margin-top: 1px;
+                        margin-left: 5px;
+                    }
+                }
+                .goods_in_basket {
+                    font-size: 10pt;
+                }
+            }
+        }
+    }
+}

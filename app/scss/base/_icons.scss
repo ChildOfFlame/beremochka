@@ -1,0 +1,171 @@
+.sprite {
+    background-image: url(../../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+.sprite-arrow_left {
+    width: 6px;
+    height: 9px;
+    background-position: -5px -5px;
+}
+
+.sprite-arrow_right {
+    width: 6px;
+    height: 9px;
+    background-position: -21px -5px;
+}
+
+.sprite-arrow_up {
+    width: 10px;
+    height: 6px;
+    background-position: -37px -5px;
+}
+
+.sprite-arrow_up_black {
+    width: 10px;
+    height: 6px;
+    background-position: -57px -5px;
+}
+
+.sprite-arrow_up_scroll {
+    width: 30px;
+    height: 30px;
+    background-position: -77px -5px;
+}
+
+.sprite-back {
+    width: 23px;
+    height: 23px;
+    background-position: -117px -5px;
+}
+
+.sprite-basket {
+    width: 33px;
+    height: 29px;
+    background-position: -5px -45px;
+}
+
+.sprite-cart {
+    width: 17px;
+    height: 10px;
+    background-position: -48px -38px;
+}
+
+.sprite-clock {
+    width: 15px;
+    height: 15px;
+    background-position: -117px -38px;
+}
+
+.sprite-compare {
+    width: 17px;
+    height: 17px;
+    background-position: -48px -63px;
+}
+
+.sprite-compare_gray {
+    width: 17px;
+    height: 17px;
+    background-position: -75px -63px;
+}
+
+.sprite-favorite {
+    width: 18px;
+    height: 16px;
+    background-position: -102px -63px;
+}
+
+.sprite-favorite_red {
+    width: 18px;
+    height: 16px;
+    background-position: -130px -63px;
+}
+
+.sprite-goal {
+    width: 23px;
+    height: 23px;
+    background-position: -5px -89px;
+}
+
+.sprite-like {
+    width: 22px;
+    height: 21px;
+    background-position: -102px -89px;
+}
+
+.sprite-logo {
+    width: 33px;
+    height: 45px;
+    background-position: -150px -5px;
+}
+
+.sprite-menu {
+    width: 16px;
+    height: 16px;
+    background-position: -158px -60px;
+}
+
+.sprite-one_click_icon {
+    width: 11px;
+    height: 19px;
+    background-position: -158px -86px;
+}
+
+.sprite-pig {
+    width: 25px;
+    height: 21px;
+    background-position: -38px -115px;
+}
+
+.sprite-printer {
+    width: 26px;
+    height: 26px;
+    background-position: -134px -115px;
+}
+
+.sprite-sale {
+    width: 26px;
+    height: 21px;
+    background-position: -5px -151px;
+}
+
+.sprite-share {
+    width: 18px;
+    height: 11px;
+    background-position: -73px -115px;
+}
+
+.sprite-subscribe_icon {
+    width: 62px;
+    height: 43px;
+    background-position: -41px -151px;
+}
+
+.soc_sprite {
+    background-image: url(../../img/social_icons.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 31px;
+    height: 31px;
+    display: inline-block;
+    
+    &.vk {
+        background-position: -2px -2px;
+    }
+    
+    &.ok {
+        background-position: -42px -2px;
+    }
+    
+    &.facebook {
+        background-position: -82px -2px;
+    }
+    
+    &.youtube {
+        background-position: -82px -122px;
+    }
+    
+    &.instagram {
+        background-position: -122px -122px;
+    }
+}
