@@ -1,0 +1,54 @@
+#callback{
+	width: 420px;
+	.form_head{
+		position:relative;
+	    border-bottom: 2px solid;
+		padding: 21px 58px 21px;
+		border-bottom-color: $orange;
+		i{
+			position: absolute;
+			top: 22px;
+    		right: 59px;
+		}
+	}
+	.box-modal_close{
+		font-size: 21px;
+	}
+	form{
+		padding:25px 50px;
+		input[type="submit"]{
+			margin-top: 12px;
+	    	font-size: 12px;
+	    	padding: 12px 13px;
+			color:$white;
+		}
+	}
+	.block_label_input{
+		width: 100%;
+		vertical-align:top;
+		display: inline-block;
+		margin-bottom: 24px;
+		label{
+			display: block;
+			font-size: 12px;
+			margin-bottom: 3px;
+			color:$gray_dark;
+			.required{
+				color:$orange;
+				font-size: 16px;
+			}
+		}
+		input{
+			box-sizing: border-box;
+		    background: $pink_light;
+		    border: 1px solid #E5E5E5;
+		    border-radius: 2px;
+		    box-shadow: none;
+		    color:$black;
+		    height: auto;
+		    font-size: 12px;
+		    padding: 12px 13px 9px;
+		    width: 100%;
+		}
+	}
+}

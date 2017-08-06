@@ -3,143 +3,186 @@
     background-repeat: no-repeat;
     display: block;
 }
+.sprite-arrow_history_black {
+    width: 25px;
+    height: 25px;
+    background-position: -5px -5px;
+}
+
+.sprite-arrow_history_white {
+    width: 25px;
+    height: 25px;
+    background-position: -40px -5px;
+}
+
 .sprite-arrow_left {
     width: 6px;
     height: 9px;
-    background-position: -5px -5px;
+    background-position: -75px -5px;
 }
 
 .sprite-arrow_right {
     width: 6px;
     height: 9px;
-    background-position: -21px -5px;
+    background-position: -91px -5px;
 }
 
 .sprite-arrow_up {
     width: 10px;
     height: 6px;
-    background-position: -37px -5px;
+    background-position: -107px -5px;
 }
 
 .sprite-arrow_up_black {
     width: 10px;
     height: 6px;
-    background-position: -57px -5px;
+    background-position: -127px -5px;
 }
 
 .sprite-arrow_up_scroll {
     width: 30px;
     height: 30px;
-    background-position: -77px -5px;
+    background-position: -147px -5px;
 }
 
 .sprite-back {
     width: 23px;
     height: 23px;
-    background-position: -117px -5px;
+    background-position: -5px -45px;
 }
 
 .sprite-basket {
     width: 33px;
     height: 29px;
-    background-position: -5px -45px;
+    background-position: -38px -45px;
 }
 
 .sprite-cart {
     width: 17px;
     height: 10px;
-    background-position: -48px -38px;
+    background-position: -81px -45px;
 }
 
 .sprite-clock {
     width: 15px;
     height: 15px;
-    background-position: -117px -38px;
+    background-position: -108px -45px;
 }
 
 .sprite-compare {
     width: 17px;
     height: 17px;
-    background-position: -48px -63px;
+    background-position: -133px -45px;
 }
 
 .sprite-compare_gray {
     width: 17px;
     height: 17px;
-    background-position: -75px -63px;
+    background-position: -160px -45px;
 }
 
 .sprite-favorite {
     width: 18px;
     height: 16px;
-    background-position: -102px -63px;
+    background-position: -81px -72px;
+}
+
+.sprite-favorite_gray {
+    width: 18px;
+    height: 16px;
+    background-position: -109px -72px;
 }
 
 .sprite-favorite_red {
     width: 18px;
     height: 16px;
-    background-position: -130px -63px;
+    background-position: -137px -72px;
 }
 
 .sprite-goal {
     width: 23px;
     height: 23px;
-    background-position: -5px -89px;
+    background-position: -5px -98px;
 }
 
 .sprite-like {
     width: 22px;
     height: 21px;
-    background-position: -102px -89px;
+    background-position: -38px -98px;
 }
 
 .sprite-logo {
     width: 33px;
     height: 45px;
-    background-position: -150px -5px;
+    background-position: -70px -98px;
 }
 
 .sprite-menu {
     width: 16px;
     height: 16px;
-    background-position: -158px -60px;
+    background-position: -165px -72px;
 }
 
 .sprite-one_click_icon {
     width: 11px;
     height: 19px;
-    background-position: -158px -86px;
+    background-position: -113px -98px;
 }
 
 .sprite-pig {
     width: 25px;
     height: 21px;
-    background-position: -38px -115px;
+    background-position: -134px -98px;
+}
+
+.sprite-popup_call {
+    width: 51px;
+    height: 51px;
+    background-position: -113px -129px;
+}
+
+.sprite-popup_login {
+    width: 47px;
+    height: 53px;
+    background-position: -187px -5px;
 }
 
 .sprite-printer {
     width: 26px;
     height: 26px;
-    background-position: -134px -115px;
+    background-position: -191px -68px;
 }
 
 .sprite-sale {
     width: 26px;
     height: 21px;
-    background-position: -5px -151px;
+    background-position: -174px -104px;
+}
+
+.sprite-seacrh {
+    width: 20px;
+    height: 20px;
+    background-position: -210px -104px;
+}
+
+.sprite-see_more {
+    width: 15px;
+    height: 13px;
+    background-position: -5px -134px;
 }
 
 .sprite-share {
     width: 18px;
     height: 11px;
-    background-position: -73px -115px;
+    background-position: -30px -134px;
 }
 
 .sprite-subscribe_icon {
     width: 62px;
     height: 43px;
-    background-position: -41px -151px;
+    background-position: -174px -135px;
 }
+
 
 .soc_sprite {
     background-image: url(../../img/social_icons.png);

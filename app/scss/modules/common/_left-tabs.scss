@@ -1,0 +1,36 @@
+.left_block{
+	.left_menu{
+		li{
+			margin-top: 2px;
+			margin-right: 35px;
+			&:first-child{
+				margin-top: 0px;
+			}
+			&:last-child{
+				a{
+					background: none;
+					&:hover{
+						background: none;
+						color:$black;
+					}
+				}
+			}
+			a{
+				display: block;
+				border-radius:2px;
+				background:#f6f6f6;
+				padding:21px 21px 21px 27px;
+				color:$black;
+				font-weight:bold;
+				&:hover{
+					background: $orange;
+					color:$white;
+				}
+				&.active{
+					background: $orange;
+					color:$white;
+				}
+			}
+		}
+	}	
+}

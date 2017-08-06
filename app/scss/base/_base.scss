@@ -20,7 +20,11 @@ a{
 p{
     margin: 0;
 }
-
+h1.pagetitle{
+    font-size:28px;
+    color:$black;
+    margin:25px 0px;
+}
 ol, ul {
   list-style: none;
     margin: 0;
@@ -165,7 +169,13 @@ input{
 .hidden {
     display: none;
 }
-
+.clear {
+    clear:both;
+}
+.seo_text_top{
+    font-size: 12px;
+    color:$gray_dark;
+}
 @media (min-width: 768px) {
     .container {
         width: 750px;

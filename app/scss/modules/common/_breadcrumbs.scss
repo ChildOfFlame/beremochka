@@ -1,0 +1,18 @@
+.breadcrumbs{
+	margin: 23px 0px 11px;
+
+	a{
+		color:$gray_dark;
+		font-size: 12px;
+		&:hover{
+			color:$orange;
+		}
+	}
+	.separator{
+		margin: 0 2px;
+		display: inline-block;
+		line-height: 18px;
+		zoom:1;
+		color:$gray_dark;
+	}
+}

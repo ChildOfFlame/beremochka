@@ -1,0 +1,46 @@
+.personal_date_container,.replace_password_container{
+	margin-left: 24px;
+	.block_label_input{
+		width: 48%;
+		vertical-align:top;
+		display: inline-block;
+		margin-bottom: 24px;
+		label{
+			display: block;
+			font-size: 12px;
+			margin-bottom: 3px;
+			color:$gray_dark;
+			.required{
+				color:$orange;
+				font-size: 16px;
+			}
+		}
+		input{
+			box-sizing: border-box;
+		    background: $pink_light;
+		    border: 1px solid #E5E5E5;
+		    border-radius: 2px;
+		    box-shadow: none;
+		    color:$black;
+		    height: auto;
+		    font-size: 12px;
+		    padding: 12px 13px 9px;
+		    width: 100%;
+		}
+	}
+	.block_text{
+		width: 33%;
+		vertical-align:top;
+		display: inline-block;
+		padding: 20px 0px 0px 25px;
+    	box-sizing: border-box;
+    	font-size: 11px;
+    	color:$gray_dark;
+	}
+	input[type="submit"]{
+		margin-top: 12px;
+    	font-size: 12px;
+    	padding: 12px 13px;
+		color:$white;
+	}
+}
