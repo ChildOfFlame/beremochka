@@ -1,12 +1,12 @@
 {
-  "name": "beremochka",
+  "name": "beremocka",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "child_of_flame",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.13",
@@ -22,5 +22,5 @@
     "gulp-sourcemaps": "^2.6.0",
     "gulp-uglifyjs": "^0.6.2",
     "imagemin-pngquant": "^5.0.1"
-  },
+  }
 }

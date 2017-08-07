@@ -1,0 +1,123 @@
+.history_container{
+	margin-left: 14px;
+}
+.list_history{
+	border-collapse: collapse;
+	width:100%;
+	margin-bottom: 20px;
+	tr{
+		&:first-child{
+			td{
+				font-size:12px;
+				padding: 8px 32px 9px;
+				color:$gray_dark;
+				&:first-child{
+					padding-left: 19px;
+				}
+			}		
+		}
+		&.main_line{
+			border: 1px solid $white;
+			&:hover{
+				cursor:pointer;
+				background: #f6f6f6;	
+				border: 1px solid $gray;
+			}
+			
+			&.active{
+				border: 1px solid $gray;
+				td{
+					&.item_cell{
+						i{
+							background-color: $orange;
+							transform:rotate(180deg);
+							background-position: -40px -5px;
+						}
+					}
+				}
+			}
+		}
+		td{
+			border-bottom:1px solid $gray;
+			padding: 23px 13px 22px;
+			font-size:12px;
+			&.item_cell{
+				padding-left:10px;
+				i{
+					display: inline-block;
+					vertical-align:middle;
+				    background-position: -5px -5px;
+					width:25px;
+					height:25px;
+					border-radius:50%;
+					&:hover{
+						background-color: $orange;
+						background-position: -40px -5px;
+
+					}
+				}
+				span{
+					color:$orange;
+					vertical-align:middle;
+					font-weight: bold;
+					font-size:14px;
+					margin-left: 11px;
+				}
+			}
+			&.cancel{
+				color:$red;
+			}
+			&.payed{
+				color:$green;
+			}
+			&.summ_cell{
+				font-weight: bold;
+				font-size:14px;
+			}
+		}
+		&.second_line{
+			.drop_cell{
+				border:1px solid $gray;
+				padding: 4px 0px 15px;
+				display:none;
+			}
+			.drop_container{
+				display:none;
+				table{
+					width: 100%;
+					tr{
+						td{
+							&:first-child{
+								padding-left: 50px;
+								text-align:left;
+							}
+							padding: 4px 12px 4px;
+							text-align:right;
+							.name_tovar{
+								color:$orange;
+							}
+						}
+					}
+				}
+				.drop_controll{
+					padding:20px 10px 0px 50px;
+					a{
+						padding:11px 13px;
+						margin-right: 10px;
+					}
+					.result{
+						float: right;
+						font-size:14px;
+						.name_res{
+							font-weight: bold;
+							margin-right: 20px;
+						}
+						.res_sum{
+							font-weight: bold;
+						}
+					}
+				}
+			}	
+		}
+	}
+}

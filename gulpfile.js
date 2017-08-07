@@ -26,7 +26,8 @@ gulp.task('sass', function(){ // Создаем таск Sass
 gulp.task('scripts', function() {
     return gulp.src([ // Берем все необходимые библиотеки
         'app/libs/jquery/dist/jquery.min.js',
-        'app/libs/swiper/dist/js/swiper.jquery.min.js'
+        'app/libs/swiper/dist/js/swiper.jquery.min.js',
+        'app/libs/jquery.arcticmodal/jquery.arcticmodal-0.3.min.js'
         ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл
@@ -34,8 +35,12 @@ gulp.task('scripts', function() {
     });
 /////////////////////////////
 gulp.task('css-libs', ['sass'], function() {
-    return gulp.src('app/css/libs.css') // Выбираем файл для минификации
-        .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.css
+    return gulp.src(['app/libs/jquery.arcticmodal/jquery.arcticmodal-0.3.css', // Выбираем файл для минификации
+                     'app/libs/jquery.arcticmodal/themes/simple.css',
+                     'app/libs/swiper/dist/css/swiper.min.css',
+                     'app/libs/pure/pure-min.css',
+        ])
+        .pipe(concat('libs.min.css')) // Собираем их в кучу в новом файле libs.min.css
         .pipe(cssnano()) // Сжимаем
         .pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
     });
@@ -49,7 +54,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
     });
 });
 /////////////////////////////
-gulp.task('watch', ['scripts', /*'css-libs',*/'sass', 'browser-sync'], function() {
+gulp.task('watch', ['scripts','css-libs','sass', 'browser-sync'], function() {
     gulp.watch('app/scss/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
     gulp.watch('app/**/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
     gulp.watch('app/css/**/*.css', browserSync.reload); // Наблюдение за CSS файлами в папке css
