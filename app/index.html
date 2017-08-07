@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>New project</title>
-
-    <link href="libs/swiper/dist/css/swiper.min.css" rel="stylesheet">
-    <link href="libs/pure/pure-min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/libs.min.css">
     <link href="css/style.css" rel="stylesheet">
 
     <script src="js/libs.min.js"></script>
@@ -29,7 +27,7 @@
                         <a href="#." class="top_nav">Контакты</a>
                     </div>
                     <div class="pure-u-1-6 entry">
-                        <a href="#." class="top_nav">Вход</a>
+                        <a href="#." id="entry_btn" class="top_nav">Вход</a>
                         <a href="#." class="top_nav">Регистрация</a>
                     </div>
                 </div>
@@ -90,8 +88,11 @@
                 <div class="container">
                     <ul>
                         <li>
-                            <div class="sprite sprite-menu"></div>
-                            <a href="#.">Каталог</a>
+                            
+                            <a href="#.">
+                                <div class="sprite sprite-menu"></div>
+                                Каталог
+                            </a>
                         </li>
                         <li><a href="#.">Акции и новинки</a></li>
                         <li><a href="#.">Доставка</a></li>
@@ -110,7 +111,7 @@
         <div class="swiper-container home_slider_swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="img/home_slider_1.png" alt="home_slider">
+                    <img src="img/home_slider_bg.png" alt="home_slider">
                     <div class="container">
                         <div class="text_slider_wrap">
                             <div class="title">Ваш малыш готов к зиме?</div>
@@ -120,10 +121,37 @@
                                 <a href="#." class="btn_gray">В раздел</a>
                             </div>
                         </div>
+                        <img src="img/home_slider_img.png" alt="slide_img">
                     </div>
                 </div>
-                <div class="swiper-slide"><img src="img/home_slider_1.png" alt="home_slider"></div>
-                <div class="swiper-slide"><img src="img/home_slider_1.png" alt="home_slider"></div>
+                <div class="swiper-slide">
+                    <img src="img/home_slider_bg.png" alt="home_slider">
+                    <div class="container">
+                        <div class="text_slider_wrap">
+                            <div class="title">Ваш малыш готов к зиме?</div>
+                            <div class="description">Новое поступление лучших товаров на наш склад уже сегодня. В наличии только топовые и стильные модели для Ваших деток. Кроме того всем новым покупателям скидка 10% на первый заказ!</div>
+                            <div class="group_button">
+                                <a href="#." class="btn_orange">Подробнее</a>
+                                <a href="#." class="btn_gray">В раздел</a>
+                            </div>
+                        </div>
+                        <img src="img/home_slider_img.png" alt="slide_img">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/home_slider_bg.png" alt="home_slider">
+                    <div class="container">
+                        <div class="text_slider_wrap">
+                            <div class="title">Ваш малыш готов к зиме?</div>
+                            <div class="description">Новое поступление лучших товаров на наш склад уже сегодня. В наличии только топовые и стильные модели для Ваших деток. Кроме того всем новым покупателям скидка 10% на первый заказ!</div>
+                            <div class="group_button">
+                                <a href="#." class="btn_orange">Подробнее</a>
+                                <a href="#." class="btn_gray">В раздел</a>
+                            </div>
+                        </div>
+                        <img src="img/home_slider_img.png" alt="slide_img">
+                    </div>
+                </div>
             </div>
             <div class="swiper-button-prev home_prev"></div>
             <div class="swiper-button-next home_next"></div>
@@ -197,7 +225,7 @@
 												    <div class="mark mark_blue">Хит продаж</div>
 												</div>
                                                <div class="comparison">
-                                                   <div class="sprite sprite-favorite"></div>
+                                                   <div class="sprite sprite-favorite_gray"></div>
                                                    <div class="sprite sprite-compare_gray"></div>
                                                </div>
                                                 <div class="name_goods">
@@ -236,7 +264,7 @@
 												    <div class="mark mark_blue">Хит продаж</div>
 												</div>
                                                <div class="comparison">
-                                                   <div class="sprite sprite-favorite"></div>
+                                                   <div class="sprite sprite-favorite_gray"></div>
                                                    <div class="sprite sprite-compare_gray"></div>
                                                </div>
                                                 <div class="name_goods">
@@ -276,7 +304,7 @@
 												    <div class="mark mark_green">Новинка</div>
 												</div>
                                                <div class="comparison">
-                                                   <div class="sprite sprite-favorite"></div>
+                                                   <div class="sprite sprite-favorite_gray"></div>
                                                    <div class="sprite sprite-compare_gray"></div>
                                                </div>
                                                 <div class="name_goods">
@@ -315,7 +343,7 @@
 												    <div class="mark mark_purpur">Мы рекомендуем</div>
 												</div>
                                                <div class="comparison">
-                                                   <div class="sprite sprite-favorite"></div>
+                                                   <div class="sprite sprite-favorite_gray"></div>
                                                    <div class="sprite sprite-compare_gray"></div>
                                                </div>
                                                 <div class="name_goods">
@@ -354,7 +382,7 @@
 												    <div class="mark mark_blue">Хит продаж</div>
 												</div>
                                                <div class="comparison">
-                                                   <div class="sprite sprite-favorite"></div>
+                                                   <div class="sprite sprite-favorite_gray"></div>
                                                    <div class="sprite sprite-compare_gray"></div>
                                                </div>
                                                 <div class="name_goods">
@@ -389,13 +417,202 @@
                                 <div class="swiper-container tabs_slider_swiper">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <div class="item_goods"></div>
+                                            <div class="item_goods">
+                                                <div class="img">
+                                                    <a href="#.">
+                                                        <img src="img/tabs_slide_1.png" alt="slide_1">
+                                                    </a>
+                                                </div>
+                                                <div class="marks">
+												    <div class="mark mark_blue">Хит продаж</div>
+												</div>
+                                               <div class="comparison">
+                                                   <div class="sprite sprite-favorite_gray"></div>
+                                                   <div class="sprite sprite-compare_gray"></div>
+                                               </div>
+                                                <div class="name_goods">
+                                                    <a href="#.">Тройной комфорт Сухая смесь для детей с рождения, 400 г</a>
+                                                </div>
+                                                <div class="info_goods">
+                                                    <div class="status_goods">
+                                                        <span class="has_sklad">В наличии</span>
+                                                        <span class="rating"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="price_goods"><span>3 480</span> руб.</div>
+                                                <div class="control_panel">
+                                                    <div class="buy">
+                                                        <form>
+                                                            <span class=quantity>
+                                                                <span class='symbol minus'>-</span>
+                                                                <input type="text" value="1">
+                                                                <span class='symbol plus'>+</span>
+                                                            </span>
+                                                            <a href="#." class='in_basket btn_orange'>В корзину</a>
+                                                        </form>
+                                                    </div>
+                                                    <a href="#." class='goods_in_basket btn_orange_dark hidden'>Товар в корзине!</a>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="item_goods"></div>
+                                            <div class="item_goods">
+                                                <div class="img">
+                                                    <a href="#.">
+                                                        <img src="img/tabs_slide_1.png" alt="slide_1">
+                                                    </a>
+                                                </div>
+                                                <div class="marks">
+												    <div class="mark mark_blue">Хит продаж</div>
+												</div>
+                                               <div class="comparison">
+                                                   <div class="sprite sprite-favorite_gray"></div>
+                                                   <div class="sprite sprite-compare_gray"></div>
+                                               </div>
+                                                <div class="name_goods">
+                                                    <a href="#.">Тройной комфорт Сухая смесь для детей с рождения, 400 г</a>
+                                                </div>
+                                                <div class="info_goods">
+                                                    <div class="status_goods">
+                                                        <span class="has_sklad">В наличии</span>
+                                                        <span class="rating"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="price_goods"><span>3 480</span> руб.</div>
+                                                <div class="control_panel">
+                                                    <div class="buy hidden">
+                                                        <form>
+                                                            <span class=quantity>
+                                                                <span class='symbol minus'>-</span>
+                                                                <input type="text" value="1">
+                                                                <span class='symbol plus'>+</span>
+                                                            </span>
+                                                            <a href="#." class='in_basket btn_orange'>В корзину</a>
+                                                        </form>
+                                                    </div>
+                                                    <a href="#." class='goods_in_basket btn_orange_dark'>Товар в корзине!</a>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="item_goods"></div>
+                                            <div class="item_goods">
+                                                <div class="img">
+                                                    <a href="#.">
+                                                        <img src="img/tabs_slide_1.png" alt="slide_1">
+                                                    </a>
+                                                </div>
+                                                <div class="marks">
+												    <div class="mark mark_blue">Хит продаж</div>
+												    <div class="mark mark_green">Новинка</div>
+												</div>
+                                               <div class="comparison">
+                                                   <div class="sprite sprite-favorite_gray"></div>
+                                                   <div class="sprite sprite-compare_gray"></div>
+                                               </div>
+                                                <div class="name_goods">
+                                                    <a href="#.">Тройной комфорт Сухая смесь для детей с рождения, 400 г</a>
+                                                </div>
+                                                <div class="info_goods">
+                                                    <div class="status_goods">
+                                                        <span class="has_sklad">В наличии</span>
+                                                        <span class="rating"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="price_goods"><span>3 480</span> руб.</div>
+                                                <div class="control_panel">
+                                                    <div class="buy">
+                                                        <form>
+                                                            <span class=quantity>
+                                                                <span class='symbol minus'>-</span>
+                                                                <input type="text" value="1">
+                                                                <span class='symbol plus'>+</span>
+                                                            </span>
+                                                            <a href="#." class='in_basket btn_orange'>В корзину</a>
+                                                        </form>
+                                                    </div>
+                                                    <a href="#." class='goods_in_basket btn_orange_dark hidden'>Товар в корзине!</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                             <div class="item_goods">
+                                                <div class="img">
+                                                    <a href="#.">
+                                                        <img src="img/tabs_slide_1.png" alt="slide_1">
+                                                    </a>
+                                                </div>
+                                                <div class="marks">
+												    <div class="mark mark_blue">Хит продаж</div>
+												    <div class="mark mark_green">Новинка</div>
+												</div>
+                                               <div class="comparison">
+                                                   <div class="sprite sprite-favorite_gray"></div>
+                                                   <div class="sprite sprite-compare_gray"></div>
+                                               </div>
+                                                <div class="name_goods">
+                                                    <a href="#.">Тройной комфорт Сухая смесь для детей с рождения, 400 г</a>
+                                                </div>
+                                                <div class="info_goods">
+                                                    <div class="status_goods">
+                                                        <span class="has_sklad">В наличии</span>
+                                                        <span class="rating"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="price_goods"><span>3 480</span> руб.</div>
+                                                <div class="control_panel">
+                                                    <div class="buy">
+                                                        <form>
+                                                            <span class=quantity>
+                                                                <span class='symbol minus'>-</span>
+                                                                <input type="text" value="1">
+                                                                <span class='symbol plus'>+</span>
+                                                            </span>
+                                                            <a href="#." class='in_basket btn_orange'>В корзину</a>
+                                                        </form>
+                                                    </div>
+                                                    <a href="#." class='goods_in_basket btn_orange_dark hidden'>Товар в корзине!</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                             <div class="item_goods">
+                                                <div class="img">
+                                                    <a href="#.">
+                                                        <img src="img/tabs_slide_1.png" alt="slide_1">
+                                                    </a>
+                                                </div>
+                                                <div class="marks">
+												    <div class="mark mark_blue">Хит продаж</div>
+												    <div class="mark mark_green">Новинка</div>
+												</div>
+                                               <div class="comparison">
+                                                   <div class="sprite sprite-favorite_gray"></div>
+                                                   <div class="sprite sprite-compare_gray"></div>
+                                               </div>
+                                                <div class="name_goods">
+                                                    <a href="#.">Тройной комфорт Сухая смесь для детей с рождения, 400 г</a>
+                                                </div>
+                                                <div class="info_goods">
+                                                    <div class="status_goods">
+                                                        <span class="has_sklad">В наличии</span>
+                                                        <span class="rating"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="price_goods"><span>3 480</span> руб.</div>
+                                                <div class="control_panel">
+                                                    <div class="buy">
+                                                        <form>
+                                                            <span class=quantity>
+                                                                <span class='symbol minus'>-</span>
+                                                                <input type="text" value="1">
+                                                                <span class='symbol plus'>+</span>
+                                                            </span>
+                                                            <a href="#." class='in_basket btn_orange'>В корзину</a>
+                                                        </form>
+                                                    </div>
+                                                    <a href="#." class='goods_in_basket btn_orange_dark hidden'>Товар в корзине!</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -404,13 +621,124 @@
                                 <div class="swiper-container tabs_slider_swiper">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <div class="item_goods"></div>
+                                             <div class="item_goods">
+                                                <div class="img">
+                                                    <a href="#.">
+                                                        <img src="img/tabs_slide_1.png" alt="slide_1">
+                                                    </a>
+                                                </div>
+                                                <div class="marks">
+												    <div class="mark mark_blue">Хит продаж</div>
+												    <div class="mark mark_green">Новинка</div>
+												</div>
+                                               <div class="comparison">
+                                                   <div class="sprite sprite-favorite_gray"></div>
+                                                   <div class="sprite sprite-compare_gray"></div>
+                                               </div>
+                                                <div class="name_goods">
+                                                    <a href="#.">Тройной комфорт Сухая смесь для детей с рождения, 400 г</a>
+                                                </div>
+                                                <div class="info_goods">
+                                                    <div class="status_goods">
+                                                        <span class="has_sklad">В наличии</span>
+                                                        <span class="rating"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="price_goods"><span>3 480</span> руб.</div>
+                                                <div class="control_panel">
+                                                    <div class="buy">
+                                                        <form>
+                                                            <span class=quantity>
+                                                                <span class='symbol minus'>-</span>
+                                                                <input type="text" value="1">
+                                                                <span class='symbol plus'>+</span>
+                                                            </span>
+                                                            <a href="#." class='in_basket btn_orange'>В корзину</a>
+                                                        </form>
+                                                    </div>
+                                                    <a href="#." class='goods_in_basket btn_orange_dark hidden'>Товар в корзине!</a>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="item_goods"></div>
+                                             <div class="item_goods">
+                                                <div class="img">
+                                                    <a href="#.">
+                                                        <img src="img/tabs_slide_1.png" alt="slide_1">
+                                                    </a>
+                                                </div>
+                                                <div class="marks">
+												    <div class="mark mark_blue">Хит продаж</div>
+												    <div class="mark mark_green">Новинка</div>
+												</div>
+                                               <div class="comparison">
+                                                   <div class="sprite sprite-favorite_gray"></div>
+                                                   <div class="sprite sprite-compare_gray"></div>
+                                               </div>
+                                                <div class="name_goods">
+                                                    <a href="#.">Тройной комфорт Сухая смесь для детей с рождения, 400 г</a>
+                                                </div>
+                                                <div class="info_goods">
+                                                    <div class="status_goods">
+                                                        <span class="has_sklad">В наличии</span>
+                                                        <span class="rating"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="price_goods"><span>3 480</span> руб.</div>
+                                                <div class="control_panel">
+                                                    <div class="buy">
+                                                        <form>
+                                                            <span class=quantity>
+                                                                <span class='symbol minus'>-</span>
+                                                                <input type="text" value="1">
+                                                                <span class='symbol plus'>+</span>
+                                                            </span>
+                                                            <a href="#." class='in_basket btn_orange'>В корзину</a>
+                                                        </form>
+                                                    </div>
+                                                    <a href="#." class='goods_in_basket btn_orange_dark hidden'>Товар в корзине!</a>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="item_goods"></div>
+                                             <div class="item_goods">
+                                                <div class="img">
+                                                    <a href="#.">
+                                                        <img src="img/tabs_slide_1.png" alt="slide_1">
+                                                    </a>
+                                                </div>
+                                                <div class="marks">
+												    <div class="mark mark_blue">Хит продаж</div>
+												    <div class="mark mark_green">Новинка</div>
+												</div>
+                                               <div class="comparison">
+                                                   <div class="sprite sprite-favorite_gray"></div>
+                                                   <div class="sprite sprite-compare_gray"></div>
+                                               </div>
+                                                <div class="name_goods">
+                                                    <a href="#.">Тройной комфорт Сухая смесь для детей с рождения, 400 г</a>
+                                                </div>
+                                                <div class="info_goods">
+                                                    <div class="status_goods">
+                                                        <span class="has_sklad">В наличии</span>
+                                                        <span class="rating"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="price_goods"><span>3 480</span> руб.</div>
+                                                <div class="control_panel">
+                                                    <div class="buy">
+                                                        <form>
+                                                            <span class=quantity>
+                                                                <span class='symbol minus'>-</span>
+                                                                <input type="text" value="1">
+                                                                <span class='symbol plus'>+</span>
+                                                            </span>
+                                                            <a href="#." class='in_basket btn_orange'>В корзину</a>
+                                                        </form>
+                                                    </div>
+                                                    <a href="#." class='goods_in_basket btn_orange_dark hidden'>Товар в корзине!</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -419,10 +747,84 @@
                                 <div class="swiper-container tabs_slider_swiper">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <div class="item_goods"></div>
+                                             <div class="item_goods">
+                                                <div class="img">
+                                                    <a href="#.">
+                                                        <img src="img/tabs_slide_1.png" alt="slide_1">
+                                                    </a>
+                                                </div>
+                                                <div class="marks">
+												    <div class="mark mark_blue">Хит продаж</div>
+												    <div class="mark mark_green">Новинка</div>
+												</div>
+                                               <div class="comparison">
+                                                   <div class="sprite sprite-favorite_gray"></div>
+                                                   <div class="sprite sprite-compare_gray"></div>
+                                               </div>
+                                                <div class="name_goods">
+                                                    <a href="#.">Тройной комфорт Сухая смесь для детей с рождения, 400 г</a>
+                                                </div>
+                                                <div class="info_goods">
+                                                    <div class="status_goods">
+                                                        <span class="has_sklad">В наличии</span>
+                                                        <span class="rating"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="price_goods"><span>3 480</span> руб.</div>
+                                                <div class="control_panel">
+                                                    <div class="buy">
+                                                        <form>
+                                                            <span class=quantity>
+                                                                <span class='symbol minus'>-</span>
+                                                                <input type="text" value="1">
+                                                                <span class='symbol plus'>+</span>
+                                                            </span>
+                                                            <a href="#." class='in_basket btn_orange'>В корзину</a>
+                                                        </form>
+                                                    </div>
+                                                    <a href="#." class='goods_in_basket btn_orange_dark hidden'>Товар в корзине!</a>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="item_goods"></div>
+                                             <div class="item_goods">
+                                                <div class="img">
+                                                    <a href="#.">
+                                                        <img src="img/tabs_slide_1.png" alt="slide_1">
+                                                    </a>
+                                                </div>
+                                                <div class="marks">
+												    <div class="mark mark_blue">Хит продаж</div>
+												    <div class="mark mark_green">Новинка</div>
+												</div>
+                                               <div class="comparison">
+                                                   <div class="sprite sprite-favorite_gray"></div>
+                                                   <div class="sprite sprite-compare_gray"></div>
+                                               </div>
+                                                <div class="name_goods">
+                                                    <a href="#.">Тройной комфорт Сухая смесь для детей с рождения, 400 г</a>
+                                                </div>
+                                                <div class="info_goods">
+                                                    <div class="status_goods">
+                                                        <span class="has_sklad">В наличии</span>
+                                                        <span class="rating"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="price_goods"><span>3 480</span> руб.</div>
+                                                <div class="control_panel">
+                                                    <div class="buy">
+                                                        <form>
+                                                            <span class=quantity>
+                                                                <span class='symbol minus'>-</span>
+                                                                <input type="text" value="1">
+                                                                <span class='symbol plus'>+</span>
+                                                            </span>
+                                                            <a href="#." class='in_basket btn_orange'>В корзину</a>
+                                                        </form>
+                                                    </div>
+                                                    <a href="#." class='goods_in_basket btn_orange_dark hidden'>Товар в корзине!</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -432,6 +834,525 @@
                 </div>
             </div>
 
+        </div>
+    </div>
+    <div class="container-fluid delimiter"></div>
+    <div class="container-fluid">
+        <div class="container notes_for_moms">
+            <div class="image">
+                <img src="img/notes_for_moms.png" alt="notes_for_moms">
+            </div>
+            <div class="content">
+                <div class="title">Заметки для мамы</div>
+                <div class="subscribe">
+                    <div class="sprite sprite-subscribe_icon"></div>
+                    <form>
+                        <input type="text" placeholder="Напишите Ваше имя">
+                        <input type="text" placeholder="Оставьте свой e-mail">
+                        <input type="submit" class="btn_orange" value="Подписаться">
+                    </form>
+                </div>
+                <div class="description">Подпишитесь на наши заметки и получайте их БЕСПЛАТНО каждый 
+                    день на свою почту! Только правильные советы для молодых мам!</div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid new_events">
+        <div class="container">
+             <div class="arrow_slider">
+                <div class="more"><a href="#.">Читать все советы</a></div>
+                <div class="swiper-button-prev new_events_arrow">
+                    <div class="sprite sprite-arrow_left"></div>
+                </div>
+                <div class="swiper-button-next new_events_arrow">
+                    <div class="sprite sprite-arrow_right"></div>
+                </div>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/new_events.png" alt="new_events">
+                        <div class="content">
+                            <div class="title_small">Новые события в детском мире</div>
+                            <div class="description">Введение прикорма в рацион малыша очень часто пугает молодых мамочек, 
+                                особенно тех, которые стали мамой 
+                                впервые и не имеют Такой прикорм
+                            </div>
+                            <a href="#." class="more">Подробнее</a>
+                            <div class="time_publish">
+                                <div class="sprite sprite-clock"></div>
+                                <span>21 июня 2017</span>
+                            </div>
+                            <div class="share">
+                                <div class="sprite sprite-share"></div>
+                                <span>Пделиться</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/new_events.png" alt="new_events">
+                        <div class="content">
+                            <div class="title_small">Новые события в детском мире</div>
+                            <div class="description">Введение прикорма в рацион малыша очень часто пугает молодых мамочек, 
+                                особенно тех, которые стали мамой 
+                                впервые и не имеют Такой прикорм
+                            </div>
+                            <a href="#." class="more">Подробнее</a>
+                            <div class="time_publish">
+                                <div class="sprite sprite-clock"></div>
+                                <span>21 июня 2017</span>
+                            </div>
+                            <div class="share">
+                                <div class="sprite sprite-share"></div>
+                                <span>Пделиться</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/new_events.png" alt="new_events">
+                        <div class="content">
+                            <div class="title_small">Новые события в детском мире</div>
+                            <div class="description">Введение прикорма в рацион малыша очень часто пугает молодых мамочек, 
+                                особенно тех, которые стали мамой 
+                                впервые и не имеют Такой прикорм
+                            </div>
+                            <a href="#." class="more">Подробнее</a>
+                            <div class="time_publish">
+                                <div class="sprite sprite-clock"></div>
+                                <span>21 июня 2017</span>
+                            </div>
+                            <div class="share">
+                                <div class="sprite sprite-share"></div>
+                                <span>Пделиться</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/new_events.png" alt="new_events">
+                        <div class="content">
+                            <div class="title_small">Новые события в детском мире</div>
+                            <div class="description">Введение прикорма в рацион малыша очень часто пугает молодых мамочек, 
+                                особенно тех, которые стали мамой 
+                                впервые и не имеют Такой прикорм
+                            </div>
+                            <a href="#." class="more">Подробнее</a>
+                            <div class="time_publish">
+                                <div class="sprite sprite-clock"></div>
+                                <span>21 июня 2017</span>
+                            </div>
+                            <div class="share">
+                                <div class="sprite sprite-share"></div>
+                                <span>Пделиться</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/new_events.png" alt="new_events">
+                        <div class="content">
+                            <div class="title_small">Новые события в детском мире</div>
+                            <div class="description">Введение прикорма в рацион малыша очень часто пугает молодых мамочек, 
+                                особенно тех, которые стали мамой 
+                                впервые и не имеют Такой прикорм
+                            </div>
+                            <a href="#." class="more">Подробнее</a>
+                            <div class="time_publish">
+                                <div class="sprite sprite-clock"></div>
+                                <span>21 июня 2017</span>
+                            </div>
+                            <div class="share">
+                                <div class="sprite sprite-share"></div>
+                                <span>Пделиться</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="container-fluid popular_section">
+        <div class="container">
+            <div class="pure-g">
+                <div class="pure-u-1-4">
+                    <div class="title">Популярные разделы</div>
+                    <div class="tabs">
+                        <ul>
+                            <li class="title_small active"><span class="tabs_icon sprite sprite-goal"></span>Детское питание</li>
+                            <li class="title_small"><span class="tabs_icon sprite sprite-sale"></span>Косметика</li>
+                            <li class="title_small"><span class="tabs_icon sprite sprite-like"></span>Спорт и отдых</li>
+                            <li class="title_small"><span class="tabs_icon sprite sprite-pig"></span>Акссесуары</li>
+                            <li class="title_small"><span class="tabs_icon sprite sprite-pig"></span>Все для школы</li>
+                        </ul>
+                        <span class="orange_border_dashed">Перейти в каталог товаров</span>
+                    </div>
+                </div>
+                <div class="pure-u-3-4">
+                    <div class="pure-g blocks_section">
+                       <ul>
+                           <li class="active">
+                                <div class="pure-u-1-4 ">
+                                    <img src="img/bottle.png" alt="bottle">
+                                <div class="title_small">Бутылочки и соски</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/toys.png" alt="toys">
+                                    <div class="title_small">Игрушки</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/clothes.png" alt="clothes">
+                                    <div class="title_small">Одежда</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/stroller.png" alt="stroller">
+                                    <div class="title_small">Коляски</div>
+                                </div>
+                                <div class="pure-u-1-4 ">
+                                    <img src="img/bottle.png" alt="bottle">
+                                    <div class="title_small">Бутылочки и соски</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/toys.png" alt="toys">
+                                    <div class="title_small">Игрушки</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/clothes.png" alt="clothes">
+                                    <div class="title_small">Одежда</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/stroller.png" alt="stroller">
+                                    <div class="title_small">Коляски</div>
+                                </div> 
+                           </li>
+                           <li>
+                               <div class="pure-u-1-4 ">
+                                    <img src="img/bottle.png" alt="bottle">
+                                <div class="title_small">Бутылочки и соски</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/toys.png" alt="toys">
+                                    <div class="title_small">Игрушки</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/clothes.png" alt="clothes">
+                                    <div class="title_small">Одежда</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/stroller.png" alt="stroller">
+                                    <div class="title_small">Коляски</div>
+                                </div>
+                                <div class="pure-u-1-4 ">
+                                    <img src="img/bottle.png" alt="bottle">
+                                    <div class="title_small">Бутылочки и соски</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/toys.png" alt="toys">
+                                    <div class="title_small">Игрушки</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/clothes.png" alt="clothes">
+                                    <div class="title_small">Одежда</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/stroller.png" alt="stroller">
+                                    <div class="title_small">Коляски</div>
+                                </div> 
+                           </li>
+                           <li>
+                               <div class="pure-u-1-4 ">
+                                    <img src="img/bottle.png" alt="bottle">
+                                <div class="title_small">Бутылочки и соски</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/toys.png" alt="toys">
+                                    <div class="title_small">Игрушки</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/clothes.png" alt="clothes">
+                                    <div class="title_small">Одежда</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/stroller.png" alt="stroller">
+                                    <div class="title_small">Коляски</div>
+                                </div>
+                                <div class="pure-u-1-4 ">
+                                    <img src="img/bottle.png" alt="bottle">
+                                    <div class="title_small">Бутылочки и соски</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/toys.png" alt="toys">
+                                    <div class="title_small">Игрушки</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/clothes.png" alt="clothes">
+                                    <div class="title_small">Одежда</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/stroller.png" alt="stroller">
+                                    <div class="title_small">Коляски</div>
+                                </div> 
+                           </li>
+                           <li>
+                               <div class="pure-u-1-4 ">
+                                    <img src="img/bottle.png" alt="bottle">
+                                <div class="title_small">Бутылочки и соски</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/toys.png" alt="toys">
+                                    <div class="title_small">Игрушки</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/clothes.png" alt="clothes">
+                                    <div class="title_small">Одежда</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/stroller.png" alt="stroller">
+                                    <div class="title_small">Коляски</div>
+                                </div>
+                                <div class="pure-u-1-4 ">
+                                    <img src="img/bottle.png" alt="bottle">
+                                    <div class="title_small">Бутылочки и соски</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/toys.png" alt="toys">
+                                    <div class="title_small">Игрушки</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/clothes.png" alt="clothes">
+                                    <div class="title_small">Одежда</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/stroller.png" alt="stroller">
+                                    <div class="title_small">Коляски</div>
+                                </div> 
+                           </li>
+                           <li>
+                               <div class="pure-u-1-4 ">
+                                    <img src="img/bottle.png" alt="bottle">
+                                <div class="title_small">Бутылочки и соски</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/toys.png" alt="toys">
+                                    <div class="title_small">Игрушки</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/clothes.png" alt="clothes">
+                                    <div class="title_small">Одежда</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/stroller.png" alt="stroller">
+                                    <div class="title_small">Коляски</div>
+                                </div>
+                                <div class="pure-u-1-4 ">
+                                    <img src="img/bottle.png" alt="bottle">
+                                    <div class="title_small">Бутылочки и соски</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/toys.png" alt="toys">
+                                    <div class="title_small">Игрушки</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/clothes.png" alt="clothes">
+                                    <div class="title_small">Одежда</div>
+                                </div>
+                                <div class="pure-u-1-4">
+                                    <img src="img/stroller.png" alt="stroller">
+                                    <div class="title_small">Коляски</div>
+                                </div> 
+                           </li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="swiper-button-prev  popular_section_arrow popular_section_prev">
+                    <div class="sprite sprite-arrow_left"></div>
+                </div>
+                <div class="swiper-container popular_section_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/brand_4.png" alt="popular_section_slider">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/brand_1.png" alt="popular_section_slider">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/brand_2.png" alt="popular_section_slider">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/brand_3.png" alt="popular_section_slider">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/brand_4.png" alt="popular_section_slider">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/brand_1.png" alt="popular_section_slider">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/brand_2.png" alt="popular_section_slider">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/brand_3.png" alt="popular_section_slider">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/brand_4.png" alt="popular_section_slider">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next popular_section_arrow popular_section_next">
+                    <div class="sprite sprite-arrow_right"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid news_and_events">
+        <div class="container">
+            <div class="pure-g top">
+                <div class="pure-u-3-4">
+                    <div class="title">Новости и события</div>
+                </div>
+                <div class="pure-u-1-4">
+                    <a href="#." class="orange_border_dashed">Читать все новости</a>
+                </div>
+            </div>
+            <div class="pure-g">
+                <div class="pure-u-1-4">
+                    <div class="content">
+                        <div class="title_small">Новые события в детском мире</div>
+                        <div class="description">Введение прикорма в рацион малыша очень часто пугает молодых мамочек, 
+                            особенно тех, которые стали мамой 
+                            впервые и не имеют Такой прикорм
+                        </div>
+                        <a href="#." class="more">Подробнее</a>
+                        <div class="time_publish">
+                            <div class="sprite sprite-clock"></div>
+                            <span>21 июня 2017</span>
+                        </div>
+                        <div class="share">
+                            <div class="sprite sprite-share"></div>
+                            <span>Пделиться</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pure-u-1-4">
+                    <div class="content">
+                        <div class="title_small">Новые события в детском мире</div>
+                        <div class="description">Введение прикорма в рацион малыша очень часто пугает молодых мамочек, 
+                            особенно тех, которые стали мамой 
+                            впервые и не имеют Такой прикорм
+                        </div>
+                        <a href="#." class="more">Подробнее</a>
+                        <div class="time_publish">
+                            <div class="sprite sprite-clock"></div>
+                            <span>21 июня 2017</span>
+                        </div>
+                        <div class="share">
+                            <div class="sprite sprite-share"></div>
+                            <span>Пделиться</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pure-u-1-4">
+                    <div class="content">
+                        <div class="title_small">Новые события в детском мире</div>
+                        <div class="description">Введение прикорма в рацион малыша очень часто пугает молодых мамочек, 
+                            особенно тех, которые стали мамой 
+                            впервые и не имеют Такой прикорм
+                        </div>
+                        <a href="#." class="more">Подробнее</a>
+                        <div class="time_publish">
+                            <div class="sprite sprite-clock"></div>
+                            <span>21 июня 2017</span>
+                        </div>
+                        <div class="share">
+                            <div class="sprite sprite-share"></div>
+                            <span>Пделиться</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pure-u-1-4">
+                    <div class="content">
+                        <div class="title_small">Новые события в детском мире</div>
+                        <div class="description">Введение прикорма в рацион малыша очень часто пугает молодых мамочек, 
+                            особенно тех, которые стали мамой 
+                            впервые и не имеют Такой прикорм
+                        </div>
+                        <a href="#." class="more">Подробнее</a>
+                        <div class="time_publish">
+                            <div class="sprite sprite-clock"></div>
+                            <span>21 июня 2017</span>
+                        </div>
+                        <div class="share">
+                            <div class="sprite sprite-share"></div>
+                            <span>Пделиться</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pay">
+        <div class="container">
+            <div class="pure-g">
+                <div class="pure-u-1-5">
+                    <img src="img/pay.png" alt="">
+                    <div class="description">
+                        Наличный и безналичный расчет
+                    </div>
+                </div>
+                <div class="pure-u-1-5">
+                    <img src="img/delivery.png" alt="">
+                    <div class="description">
+                        Бесплатная доставка по г. Моосква
+                    </div>
+                </div>
+                <div class="pure-u-1-5">
+                    <img src="img/30day.png" alt="">
+                    <div class="description">
+                        Возврат товара в течениие 30 дней
+                    </div>
+                </div>
+                <div class="pure-u-1-5">
+                    <img src="img/garand.png" alt="">
+                    <div class="description">
+                        Гарантия качества всех товаров
+                    </div>
+                </div>
+                <div class="pure-u-1-5">
+                    <img src="img/free_call.png" alt="">
+                    <div class="description">
+                        Бесплатная консультация
+                    </div>
+                </div>
+                <div class="pure-u-1-5">
+                    <img src="img/pay.png" alt="">
+                    <div class="description">
+                        Наличный и безналичный расчет
+                    </div>
+                </div>
+                <div class="pure-u-1-5">
+                    <img src="img/delivery.png" alt="">
+                    <div class="description">
+                        Бесплатная доставка по г. Моосква
+                    </div>
+                </div>
+                <div class="pure-u-1-5">
+                    <img src="img/30day.png" alt="">
+                    <div class="description">
+                        Возврат товара в течениие 30 дней
+                    </div>
+                </div>
+                <div class="pure-u-1-5">
+                    <img src="img/garand.png" alt="">
+                    <div class="description">
+                        Гарантия качества всех товаров
+                    </div>
+                </div>
+                <div class="pure-u-1-5">
+                    <img src="img/free_call.png" alt="">
+                    <div class="description">
+                        Бесплатная консультация
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <footer>
@@ -509,6 +1430,62 @@
             </div>
         </div>
     </footer>
+    <div style="display: none;">
+        <div class="box-modal" id="callback">
+            <div class="box-modal_close arcticmodal-close">x</div>
+            <div class="form_head">
+                <h2>Заказать звонок</h2>
+                <i class="sprite sprite-popup_call"></i>
+            </div>
+            <form>
+                <div class="block_label_input">
+                    <label>Ваше имя <span class="required">*</span></label>
+                    <input type="text" name="">
+                </div>
+                 <div class="block_label_input">
+                    <label>Телефон <span class="required">*</span></label>
+                    <input type="text" name="">
+                </div>
+                <input type="submit" name="" class="btn_orange" value="Отправить">
+            </form>
+        </div>
+    </div>
+    <div style="display: none;">
+        <div class="box-modal" id="entry">
+            <div class="box-modal_close arcticmodal-close">x</div>
+            <div class="form_head">
+                <h2>Вход в личный кабинет</h2>
+                <i class="sprite sprite-popup_login"></i>
+            </div>
+            <div class="left_entry_block">
+            <form>
+                <div class="block_label_input">
+                    <label>Email <span class="required">*</span></label>
+                    <input type="text" name="">
+                </div>
+                 <div class="block_label_input">
+                    <label>Пароль <span class="required">*</span></label>
+                    <input type="text" name="">
+                </div>
+                <div class="remember_block">
+                    <div class="checkbox_block">
+                        <div class="checkbox">
+                            <input type="checkbox" id="input_check" name="check" class="input_check">
+                            <div class="check_color"></div>
+                        </div>
+                        <label for="input_check">Запомнить меня</label>
+                    </div>
+                    <a class="fogot_password">Забыли пароль?</a>
+                </div>
+                <input type="submit" name="" class="btn_orange" value="Войти">
+            </form>
+            </div>
+            <div class="registration_right_block">
+                <a class="btn_orange_border" href="#">Регистрация</a>
+                <p>После регистрации на сайте Вам бдует доступно отслеживание состояния заказов. личный кабинет и другие новые возможности.</p>
+            </div>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 

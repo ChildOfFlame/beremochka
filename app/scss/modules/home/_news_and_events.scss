@@ -1,0 +1,57 @@
+.news_and_events {
+    background: $pink_light;
+    .container {
+        padding: 70px 0 130px;
+        .top {
+            margin-bottom: 30px;
+            .pure-u-1-4 {
+                text-align: right;
+                .orange_border_dashed {
+                    margin-right: 15px;
+                    font-size: 8pt;
+                }
+            }
+        }
+        .content {
+            height: 260px;
+            width: 95%;
+            box-sizing: border-box;
+            background: $white;
+            padding: 25px;
+            font-size: 9pt;
+            &:after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            .description {
+                height: 70px;
+                overflow: hidden;
+                margin-top: 45px;
+            }
+            .more {
+                display: block;
+                color: $orange;
+                font-weight: bold;
+                margin: 10px 0 30px;
+                font-size: 8pt;
+            }
+            .sprite {
+                float: left;
+                margin-right: 10px;
+            }
+            .time_publish {
+                float: left;
+                color: $gray_dark;
+                font-weight: bold;
+                font-size: 8pt;
+            }
+            .share {
+                float: right;
+                color: $gray_dark;
+                font-weight: bold;
+                font-size: 8pt;
+            }
+        }
+    }
+}

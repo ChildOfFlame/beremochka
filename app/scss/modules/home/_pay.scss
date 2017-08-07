@@ -1,0 +1,22 @@
+.pay {
+    .container {
+        padding: 100px 0;
+        .pure-u-1-5 {
+            box-sizing: border-box;
+            padding: 40px 10px;
+            img {
+                width: 60px;
+                height: 50px;
+                margin-right: 15px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .description {
+                width: calc(100% - 80px);
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 10pt;
+            }
+        }
+    }
+}

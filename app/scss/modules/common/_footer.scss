@@ -2,7 +2,7 @@ footer {
     font-size: 9pt;
     .footer_top {
         height: 245px;
-        background: url(../../../img/background.png) $gray;
+        background: url(../img/background.png) $gray;
         font-weight: 600;
         .container {
             padding: 50px 0;
@@ -50,7 +50,7 @@ footer {
     }
     .footer_bottom {
         height: 45px;
-        background: url(../../../img/background.png) $blue;
+        background: url(../img/background.png) $blue;
         font-weight: bold;
         color: $white;
         padding: 14px 0;

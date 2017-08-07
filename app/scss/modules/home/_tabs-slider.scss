@@ -11,7 +11,7 @@
             ul {
                 position: absolute;
                 top: 22px;
-                right: 0;
+                right: 9px;
                 li {
                     display: none;
                     &.active {
@@ -72,8 +72,10 @@
         &.active {
             display: block;
         }
+        .swiper-container {
+            padding: 10px;
+        }
         .swiper-wrapper {
-            padding: 10px 0;
             box-sizing: border-box;
         }
         .item_goods {
@@ -87,12 +89,12 @@
                 box-shadow: 0 0 10px $gray_dark;
                 z-index: 20;
             }
-            &:hover .sprite-favorite {
-                background-position: -130px -63px;
-            }
-            &:hover .sprite-compare_gray {
-                background-position: -48px -63px;
-            }
+            // &:hover .sprite-favorite {
+            //     background-position: -130px -63px;
+            // }
+            // &:hover .sprite-compare_gray {
+            //     background-position: -48px -63px;
+            // }
             .img {
                 box-shadow: 0 5px 5px $gray;
                 margin: 30px 0 20px;
@@ -181,7 +183,7 @@
                         font-size: 9pt;
                         vertical-align: top;
                         margin-top: 1px;
-                        margin-left: 5px;
+                        margin-left: 4px;
                     }
                 }
                 .goods_in_basket {
@@ -190,4 +192,8 @@
             }
         }
     }
+}
+.delimiter {
+    height: 75px;
+	background: url(../img/background.png) $blue;
 }

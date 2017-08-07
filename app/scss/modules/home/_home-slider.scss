@@ -20,28 +20,36 @@
         }
     }
     .container {
+        height: 100%;
         position: absolute;
-        top: 120px;
+        top: 0;
         left: calc(50% - 600px);
-    }
-    .text_slider_wrap {
-        width: 50%;
-        .title {
-            font-size: 26pt;
-            color: $white;
-            text-transform: uppercase;
-            font-weight: bold;
+        img {
+            width: 430px;
+            height: 100%;
+            float: right;
         }
-        .description {
-            color: $white;
-            margin: 20px 0 30px;
-            line-height: 20px;
-            font-size: 13.5pt;
-        }
-        .group_button a {
-            padding: 15px 40px;
-            font-weight: bold;
-            font-size: 10pt;
+        .text_slider_wrap {
+            width: 50%;
+            float: left;
+            margin-top: 100px;
+            .title {
+                font-size: 26pt;
+                color: $white;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            .description {
+                color: $white;
+                margin: 20px 0 30px;
+                line-height: 20px;
+                font-size: 13.5pt;
+            }
+            .group_button a {
+                padding: 15px 40px;
+                font-weight: bold;
+                font-size: 10pt;
+            }
         }
     }
 }

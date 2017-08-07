@@ -19,7 +19,7 @@
 }
 
 .middle_container {
-	padding: 27px 0 12px;
+	padding: 27px;
 }
 
 .sprite-logo {
@@ -67,7 +67,7 @@
 }
 
 .phone .subtitle {
-    font-size: 7.5pt;
+    font-size: 7.4pt;
     font-weight: bold;
     color: $gray_dark;
 }
@@ -78,7 +78,7 @@
     .title{
         font-weight: bold;
         text-transform: uppercase;
-        font-size: 8.39pt;
+        font-size: 8.19pt;
     }
 }
 
@@ -155,7 +155,7 @@ nav {
     
     .sprite-menu {
         float: left;
-        margin-top: 24px;
+        margin-right: 10px;
     }
     
     ul {
@@ -170,15 +170,11 @@ nav {
     a {
         float: left;
         text-transform: uppercase;
-        padding: 23px 14.5px;
+        padding: 23px 13.5px;
         font-weight: bold;
         transition: all 0.5s ease;
         &:hover {
             background: $blue - 20;
         }
-    }
-    
-    li:last-child a {
-        padding-right: 0;
     }
 }

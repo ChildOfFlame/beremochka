@@ -1,0 +1,95 @@
+.popular_section {
+    padding: 71px 0;
+    .title {
+        margin-bottom: 30px;
+    }
+    .tabs {
+        width: 215px;
+        height: 380px;
+        background: $pink_light;
+        padding: 23px;
+        ul {
+            margin-bottom: 40px;
+            li {
+                padding: 25px 0 25px 20px;
+                opacity: 0.55;
+                transition: all 0.3s ease;
+                &.active,
+                &:hover {
+                    opacity: 1;
+                    background: $white;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+                &.active {
+                    cursor: default;
+                }
+                .tabs_icon {
+                    float: left;
+                    margin-right: 15px;
+                    margin-top: -2px;
+                }
+            }
+        }
+        .orange_border_dashed {
+            font-size: 8.5pt;
+            margin-left: 21px;
+        }
+    }
+    .blocks_section {
+        width: 98.95%;
+        margin-top: 55px;
+        border: 1px solid $gray;
+        li {
+            display: none;
+            &.active {
+                display: block;
+            }
+            .pure-u-1-4 {
+                width: 215px;
+                height: 210px;
+                border: 1px solid $gray;
+                text-align: center;
+
+                img {
+                    width: 120px;
+                    height: 120px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .slider {
+        position: relative;
+        margin-top: 30px;
+        .popular_section_slider {
+            width: 90%;
+            .swiper-slide {
+                height: 127px;
+                line-height: 127px;
+                text-align: center;
+                img {
+                    vertical-align: middle;
+                    filter: grayscale(100%);
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                    &:hover {
+                        filter: none;
+                    }
+                }
+            }
+        }
+        .popular_section_arrow {
+            width: auto;
+            height: auto;
+            background-size: auto;
+            background-image: none;
+            display: inline-block;
+            border: 1px solid $gray;
+            border-radius: 2px;
+            padding: 10px 12px;
+            vertical-align: middle;
+        }
+    }
+}

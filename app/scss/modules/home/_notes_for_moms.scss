@@ -1,0 +1,54 @@
+.notes_for_moms {
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .image {
+        height: 315px;
+        margin-right: 50px;
+        float: left;
+        img {
+            width: 480px;
+            height: 315px;
+        }
+    }
+    .content {
+        padding-top: 50px;
+        float: right;
+        text-align: right;
+        .title {
+            margin-bottom: 52px;
+        }
+        .subscribe {
+            margin-bottom: 35px;
+            .sprite-subscribe_icon {
+                margin: -4px 85px 0 0;
+                float: left;
+            }
+            form {
+                display: inline-block;
+                input {
+                    display: inline-block;
+                    vertical-align: top;
+                    font-size: 9pt;
+                    font-weight: bold;
+                }
+                input[type="text"] {
+                    border: 1px solid #e2e2e2;
+                    width: 170px;
+                    height: 40px;
+                    vertical-align: top;
+                }
+                input[type="submit"] {
+                    color: $white;
+                    padding: 13px 17px;
+                }
+            }
+        }
+        .description {
+            width: 400px;
+            float: right;
+        }
+    }
+}
