@@ -1,13 +1,41 @@
+.catalog_block{
+	margin-bottom: 60px;
+}
 .section_item{
-	margin-bottom: 20px;
-	border-bottom:1px solid $gray;
-	img{
-		display: block;
-		float:left;
+	margin: 40px 0;
+	
+	.section_header,.section_level1_header{
+		margin-bottom: 10px;
+		img{
+		display: inline-block;
 		margin-right: 5px;
-
+		vertical-align:middle;
+		}
+		.name_section{
+			vertical-align:middle;
+			color:$orange;
+			font-weight: bold;
+			span{
+				color:$black;
+			}
+		}	
 	}
+	
 	.section{
-		float:left;
+		padding: 0 49px;
+		a{
+			color:$black;
+			font-weight: bold;
+		}
+		p{
+			font-size: 10px;
+			color:$gray_dark;
+		}
 	}
+}
+.line{
+	position: relative;
+	width: 100%;
+	height: 2px;
+	background: $gray;
 }
