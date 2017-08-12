@@ -124,4 +124,26 @@ $(document).ready(function(){
     $(document).on("click","#entry_btn",function(){
         $('#entry').arcticmodal();
     });
+    
+    //slider card_product
+    var productTop = new Swiper('.slider-product-top');
+    var productThumbs = new Swiper('.slider-product-thumbs', {
+        nextButton: '.swiper-button-next.arrow_card_product',
+        prevButton: '.swiper-button-prev.arrow_card_product',
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        touchRatio: 0.2,
+        slideToClickedSlide: true,
+        spaceBetween: 35,
+    });
+    productTop.params.control = productThumbs;
+    productThumbs.params.control = productTop;
+    
+    //card_product_tabs 
+        $('.card_product_tabs li').on('click', function() {
+        var index = $(this).index();
+            console.log(index);
+        $(this).addClass('active').siblings().removeClass('active');
+		$('.card_product_tabs > .description:eq(' + index + ')').addClass('active').siblings().removeClass('active');
+    });
 });

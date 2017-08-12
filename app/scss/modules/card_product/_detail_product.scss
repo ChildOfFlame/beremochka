@@ -1,0 +1,314 @@
+.card_product {
+    .pure-g-r {
+        border: 2px solid $gray;
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .detail {
+            float: left;
+            .swiper-slide {
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+            .slider-product-top {
+                width: 80%;
+                height: 360px;
+                .swiper-wrapper {
+                    box-sizing: border-box;
+                    padding: 60px 0 50px;
+                }
+            }
+            .slider_thumbs {
+                position: relative;
+                width: 50%;
+                margin: 0 auto;
+                .slider-product-thumbs {
+                    width: 75%;
+                    height: 100px;
+                    box-sizing: border-box;
+                    padding: 10px 0;
+                    .swiper-wrapper {
+                        margin-left:calc(-25% - 15px);
+                        .swiper-slide {
+                            width: 15%;
+                            height: 100%;
+                            filter: grayscale(100%);
+                            &:hover {
+                                cursor: pointer;
+                                filter: none;
+                            }
+                            &.swiper-slide-active{
+                                filter: none;
+                            }
+                        }
+                    }
+                }
+                .arrow_card_product {
+                    width: 16px;
+                    height: 27px;
+                    background: url(../img/arrow_black.png) no-repeat;
+                    background-size: unset;
+                    top: 60%;
+                    &.swiper-button-prev {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+        .description {
+            border-left: 2px solid $gray;
+            box-sizing: border-box;
+            .top_description {
+                border-bottom: 2px solid $gray;
+                padding: 17px;
+                &:after {
+                    content: '';
+                    display: block;
+                    clear: both;
+                }
+                .comparison {
+                    float: left;
+                    color: $gray_dark;
+                    font-weight: bold;
+                    padding: 10px;
+                    line-height: 17px;
+                    font-size: 8pt;
+                    cursor: pointer;
+                    .sprite {
+                        float: left;
+                        margin-right: 10px;
+                    }
+                }
+                .brand {
+                    float: right;
+                    margin-right: 3%;
+                    img {
+                        width: 90px;
+                    }
+                }
+            }
+            .bottom_description {
+                padding: 35px 20px;
+                .block_info {
+                    width: 49%;
+                    font-weight: bold;
+                    font-size: 10pt;
+                    display: inline-block;
+                    vertical-align: top;
+                    .price_goods {
+                        display: inline-block;
+                        margin: 0 10px 20px 0;
+                        span {
+                            font-size: 18pt;
+                        }
+                    }
+                    .price_goods_old {
+                        color: $gray_dark;
+                        display: inline-block;
+                        font-size: 8pt;
+                        text-decoration: line-through;
+                        span {
+                            font-size: 14pt;
+                        }
+                    }
+                    .has_sklad {
+                        font-size: 8pt;
+                        color: $green;
+                    }
+                }
+                .block_btn {
+                    width: 34%;
+                    display: inline-block;
+                    vertical-align: top;
+                    text-align: center;
+                    font-weight: bold;
+                    margin-bottom: 50px;
+                    margin-left: 12%;
+                    .buy {
+                        .quantity {
+                            input {
+                                width: 40px;
+                                height: 30px;
+                                border: 1px solid $gray;
+                                padding: 0;
+                                text-align: center;
+                                vertical-align: top;
+                                border-radius: 0;
+                                background: $pink_light;
+                                font-size: 10pt;
+                            }
+
+                            .symbol {
+                                width: 25px;
+                                height: 30px;
+                                border: 1px solid $gray;
+                                border-radius: 2px 0 0 2px;
+                                color: $gray_dark;
+                                display: inline-block;
+                                text-align: center;
+                                box-sizing: border-box;
+                                cursor: pointer;
+                                line-height: 28px;
+                                &.minus {
+                                    border-radius: 2px 0 0 2px;
+                                    margin-right: -4px;
+                                    border-right: none;
+                                }
+                                &.plus {
+                                    border-radius: 0 2px 2px 0;
+                                    margin-left: -4px;
+                                    border-left: none;
+                                }
+                            }
+                        }
+                        .in_basket {
+                            font-size: 9pt;
+                            vertical-align: top;
+                            margin-top: -1px;
+                            margin-left: 4px;
+                            padding: 10px 12px;
+                        }
+                    }
+                    .one_click {
+                        display: block;
+                        margin-top: 13px;
+                        font-size: 9pt;
+                        span {
+                            display: inline-block;
+                            margin-right: 15px;
+                            vertical-align: middle
+                        }
+                    }
+                }
+                .text {
+                    font-size: 9pt;
+                }
+            }
+            .bonus {
+                width: 500px;
+                font-weight: bold;
+                margin: 50px auto 20px;
+                .get_bonus {
+                    width: 131px;
+                    height: 100px;
+                    display: inline-block;
+                    vertical-align: top;
+                    background: url(../../img/get_bonus.png) no-repeat;
+                    background-size: contain;
+                    color: $white;
+                    padding: 25px 10px 0 20px;
+                    box-sizing: border-box;
+                    .scope {
+                        font-size: 14pt;
+                        margin-bottom: 15px;
+                    }
+                    .subscribe {
+                        font-size: 6pt;
+                    }  
+                }
+                .card {
+                    width: 365px;
+                    height: 100px;
+                    display: inline-block;
+                    vertical-align: top;
+                    background: url(../../img/info_card.png) no-repeat;
+                    background-size: contain;
+                    margin-left: -3px;
+                    .text_gray {
+                        color: $gray_dark;
+                        font-size: 7pt;
+                        span {
+                            color: $black;
+                        }
+                    }
+                    .info_card {
+                        width: 49%;
+                        display: inline-block;
+                        vertical-align: top;
+                        padding: 17px 10px 0 24px;
+                        box-sizing: border-box;
+                        .number {
+                            margin: 18px 0 15px;
+                            font-size: 9pt;
+                            .sprite {
+                                float: left;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                    .on_account {
+                        width: 49%;
+                        display: inline-block;
+                        vertical-align: top;
+                        padding: 17px 10px 0 37px;
+                        box-sizing: border-box;
+                        .bal {
+                            font-size: 13pt;
+                            margin: 10px 0 2px;
+                            span {
+                                font-size: 20pt;
+                            }
+                        }
+                        .orange_border_dashed {
+                            font-size: 7pt;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .card_product_tabs {
+        margin-top: 45px;
+        ul {
+            li {
+                width: 160px;
+                height: 60px;
+                display: inline-block;
+                line-height: 60px;
+                text-align: center;
+                font-size: 10pt;
+                font-weight: bold;
+                background: $pink_light;
+                border: 1px solid $gray;
+                border-radius: 3px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                &:hover {
+                    background: $gray;
+                }
+                &.active {
+                    color: $white;
+                    background: $orange;
+                    span {
+                        color: $white;
+                    }
+                }
+                span {
+                    color: $orange;
+                }
+            }
+        }
+        .description {
+            height: 400px;
+            margin-top: 55px;
+            display: none;
+            font-size: 9pt;
+            &.active {
+                display: block;
+            }
+            .title {
+                margin-bottom : 20px;
+                text-transform: uppercase;
+                font-size: 11pt;
+            }
+            .text {
+                p {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
