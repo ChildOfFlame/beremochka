@@ -50,6 +50,10 @@
 		    padding: 12px 13px 9px;
 		    width: 100%;
 		}
+        textarea {
+            @extend input;
+            height: 165px;
+        }
 	}
 	.checkbox_block{
 		float:left;
@@ -139,4 +143,12 @@
 		display: block;
 		clear:both;
 	}
+    &#one_buy {
+        width: 420px;
+        .img_one_buy {
+            width: 45px;
+            height: 58px;
+            background: url('../../img/one_buy.png') no-repeat;
+        }
+    }
 }
