@@ -27,7 +27,7 @@
                         <a href="#." class="top_nav">Контакты</a>
                     </div>
                     <div class="pure-u-1-6 entry">
-                        <a href="#." class="top_nav">Вход</a>
+                        <a href="#." id="entry_btn" class="top_nav">Вход</a>
                         <a href="#." class="top_nav">Регистрация</a>
                     </div>
                 </div>
@@ -1448,6 +1448,42 @@
                 </div>
                 <input type="submit" name="" class="btn_orange" value="Отправить">
             </form>
+        </div>
+    </div>
+    <div style="display: none;">
+        <div class="box-modal" id="entry">
+            <div class="box-modal_close arcticmodal-close">x</div>
+            <div class="form_head">
+                <h2>Вход в личный кабинет</h2>
+                <i class="sprite sprite-popup_login"></i>
+            </div>
+            <div class="left_entry_block">
+            <form>
+                <div class="block_label_input">
+                    <label>Email <span class="required">*</span></label>
+                    <input type="text" name="">
+                </div>
+                 <div class="block_label_input">
+                    <label>Пароль <span class="required">*</span></label>
+                    <input type="text" name="">
+                </div>
+                <div class="remember_block">
+                    <div class="checkbox_block">
+                        <div class="checkbox">
+                            <input type="checkbox" id="input_check" name="check" class="input_check">
+                            <div class="check_color"></div>
+                        </div>
+                        <label for="input_check">Запомнить меня</label>
+                    </div>
+                    <a class="fogot_password">Забыли пароль?</a>
+                </div>
+                <input type="submit" name="" class="btn_orange" value="Войти">
+            </form>
+            </div>
+            <div class="registration_right_block">
+                <a class="btn_orange_border" href="#">Регистрация</a>
+                <p>После регистрации на сайте Вам бдует доступно отслеживание состояния заказов. личный кабинет и другие новые возможности.</p>
+            </div>
         </div>
     </div>
     <script src="js/script.js"></script>
