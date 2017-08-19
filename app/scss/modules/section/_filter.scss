@@ -1,0 +1,161 @@
+.filter{
+	margin-bottom: 40px;
+	margin-right:33px;
+	border:1px solid $gray;
+	border-radius:3px;
+	.section_filter{
+		border-bottom: 1px solid $gray;
+		&.active{
+			.header_section_filter{
+				i{
+					transform:rotate(0deg);	
+				}
+				
+			}
+		}
+	}
+	.header_section_filter{
+		padding:25px;
+		cursor:pointer;
+		span{
+			font-weight: bold;
+		}
+		i{
+			transform:rotate(180deg);
+			float:right;
+			margin-top: 5px;
+		}
+	}
+	.filter_block{
+		display: none;
+		padding:25px;
+		padding-top: 0;
+		input{
+		    box-sizing: border-box;
+		    background: #f4f4f4;
+		    border: 1px solid #E5E5E5;
+		    border-radius: 2px;
+		    box-shadow: none;
+		    color: #000;
+		    height: auto;
+		    font-size: 12px;
+		    padding: 12px 13px 9px;
+		    width: 100%;
+		    text-align:center;
+		}
+		.left_price{
+			width: 94px;
+			margin-right: 15px;
+			float:left;
+		}		
+		.right_price{
+			width: 94px;
+			float:left;
+		}
+		.checkbox_block{
+			float:none;
+		}
+		ul{
+			li{
+				display: block;
+				margin-bottom: 15px;
+			}
+		}
+	}
+	.section_controll_btn{
+		padding: 25px;
+		.clear_filter{
+			margin-right: 30px;
+			color:$white;
+			border-radius:2px;
+			cursor:pointer;
+		}
+		.show_filter{
+			color:$white;
+			border-radius:2px;
+			cursor:pointer;
+		}
+	}
+}
+.section_accord{
+	margin-right:33px;
+	border:1px solid $gray;
+	border-radius:3px;
+	i{
+		transform:rotate(180deg);
+		float:right;
+		margin-top: 5px;
+	}
+	.header_section{
+		padding:25px;
+		cursor:pointer;
+		background: $pink_light;
+		&.active{
+			i{
+				transform:rotate(0deg);
+			}
+		}
+	}
+}
+.items{
+	display: none;
+	.section_item_accord{
+		.header_section_item{
+			margin-top: 1px;
+			padding:25px;
+			background: $pink_light;
+			cursor:pointer;
+			&.active{
+				background: $orange;
+				color:$white;
+				i{
+					transform:rotate(0deg);
+				}
+			}
+		}
+	}
+	.section_item_block{
+		display: none;
+		padding:25px;
+	}
+}
+.slider-values{
+	margin-top: 15px;
+	color:$gray_dark;
+	font-size: 11px;
+	.left-val{
+		float:left;
+	}
+	.right-val{
+		float:right;	
+	}
+}
+#slider-range{
+	margin: 10px 7px 20px 7px;
+	height: 2px;
+	background: $gray;
+	position: relative;
+	.ui-slider-range{
+		position: absolute;
+		background: $orange;
+		height: 100%;
+	    z-index: 1;
+	    font-size: .7em;
+	    display: block;
+	    border: 0;
+	    background-position: 0 0;
+	}
+	.ui-slider-handle{
+		border:3px solid $gray;
+		border-radius:50%;
+		background: $orange;
+		position: absolute;
+	    z-index: 2;
+	    top: -8px;
+	    width: 12px;
+	    height: 12px;
+    	margin-left: -.6em;
+	    cursor: default;
+	    touch-action: none;
+	}
+}

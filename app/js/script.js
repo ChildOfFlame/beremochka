@@ -226,4 +226,55 @@ $(document).ready(function(){
             scrollTop: 0
         }, 500);
     });
+
+    //fiter accord
+    $(document).on("click",".header_section_filter",function(){
+        var parent=$(this).parent();
+        if(parent.hasClass("active")){
+            parent.removeClass("active")
+                  .find(".filter_block")
+                  .slideUp(300);
+        }
+        else{
+            parent.addClass("active")
+                  .find(".filter_block")
+                  .slideDown(300);
+        }
+    });
+    //section accord
+    $(document).on("click",".section_accord .header_section, .items .header_section_item",function(){
+        if($(this).hasClass("active")){
+            $(this).removeClass("active")
+                   .next()
+                   .slideUp(300);
+        }
+        else{
+            $(this).addClass("active")
+                   .next()
+                   .slideDown(300);
+        }
+    });
+
+    //range_slider_filter
+    $( "#slider-range" ).slider({
+        range: true,
+        min: 1750,
+        max: 28600,
+        values: [ 1750,28600],
+        slide: function( event, ui ) {
+            $(".left_price input").val(ui.values[ 0 ]);
+            $(".right_price input").val(ui.values[ 1 ]);
+        }
+    });
+    $(".left_price input").val($( "#slider-range" ).slider( "values", 0 ));
+    $(".right_price input").val($( "#slider-range" ).slider( "values", 1 ));
+
+    $(".left_price input").keyup(function(){
+        $( "#slider-range" ).slider( "values", 0, $(this).val());
+        console.log($("#slider-range").slider( "values"));
+    });
+    $(".right_price input").keyup(function(){
+        $( "#slider-range" ).slider( "values", 1, $(this).val());
+        console.log($("#slider-range").slider( "values"));
+    });
 });
