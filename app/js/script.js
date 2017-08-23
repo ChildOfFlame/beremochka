@@ -256,25 +256,40 @@ $(document).ready(function(){
     });
 
     //range_slider_filter
-    $( "#slider-range" ).slider({
-        range: true,
-        min: 1750,
-        max: 28600,
-        values: [ 1750,28600],
-        slide: function( event, ui ) {
-            $(".left_price input").val(ui.values[ 0 ]);
-            $(".right_price input").val(ui.values[ 1 ]);
+//    $( "#slider-range" ).slider({
+//        range: true,
+//        min: 1750,
+//        max: 28600,
+//        values: [ 1750,28600],
+//        slide: function( event, ui ) {
+//            $(".left_price input").val(ui.values[ 0 ]);
+//            $(".right_price input").val(ui.values[ 1 ]);
+//        }
+//    });
+//    $(".left_price input").val($( "#slider-range" ).slider( "values", 0 ));
+//    $(".right_price input").val($( "#slider-range" ).slider( "values", 1 ));
+//
+//    $(".left_price input").keyup(function(){
+//        $( "#slider-range" ).slider( "values", 0, $(this).val());
+//        console.log($("#slider-range").slider( "values"));
+//    });
+//    $(".right_price input").keyup(function(){
+//        $( "#slider-range" ).slider( "values", 1, $(this).val());
+//        console.log($("#slider-range").slider( "values"));
+//    });
+    
+    //Adaptive menu
+    $('.btn_menu').on('click', function(){
+       $('nav ul').slideToggle(400); 
+    });
+    
+    //Move basket
+    $(window).on('load resize',function(){
+        if ($(window).width() <= '568'){
+            $('.basket').appendTo($('.btn_menu'));
+        } else {
+            $('.basket').appendTo($('.pure-basket'));
         }
     });
-    $(".left_price input").val($( "#slider-range" ).slider( "values", 0 ));
-    $(".right_price input").val($( "#slider-range" ).slider( "values", 1 ));
-
-    $(".left_price input").keyup(function(){
-        $( "#slider-range" ).slider( "values", 0, $(this).val());
-        console.log($("#slider-range").slider( "values"));
-    });
-    $(".right_price input").keyup(function(){
-        $( "#slider-range" ).slider( "values", 1, $(this).val());
-        console.log($("#slider-range").slider( "values"));
-    });
+    
 });
