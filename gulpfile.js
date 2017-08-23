@@ -39,6 +39,7 @@ gulp.task('css-libs', ['sass'], function() {
                      'app/libs/jquery.arcticmodal/themes/simple.css',
                      'app/libs/swiper/dist/css/swiper.min.css',
                      'app/libs/pure/pure-min.css',
+                     'app/libs/pure/grids-responsive-min.css',
         ])
         .pipe(concat('libs.min.css')) // Собираем их в кучу в новом файле libs.min.css
         .pipe(cssnano()) // Сжимаем

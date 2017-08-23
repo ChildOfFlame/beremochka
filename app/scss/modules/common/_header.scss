@@ -1,12 +1,11 @@
 @import 'base/utilities';
-
 .top_nav_container {
-    background: $gray;    
+    background: $gray;
 }
 
 .top_nav {
     display: inline-block;
-	padding: 7px 3.5px;
+    padding: 7px 3.5px;
     color: $black;
     font-size: 9pt;
     &:first-child {
@@ -19,23 +18,21 @@
 }
 
 .middle_container {
-	padding: 27px;
+    padding: 27px;
 }
 
 .sprite-logo {
-	float: left;
+    float: left;
     margin-right: 4px;
 }
 
 .name_magazine {
-	float: left;
+    float: left;
     font-weight: bold;
-
     .title {
         font-size: 20pt;
         margin-top: 5px;
     }
-
     .subtitle {
         font-size: 7pt;
         color: $gray_dark;
@@ -45,18 +42,19 @@
 }
 
 .search {
-	position: relative;
+    position: relative;
     margin-left: 37px;
     margin-top: 3px;
 }
 
 .search_input {
-	width: 91%;
+    width: 91%;
     height: 43px;
     background: $gray;
 }
+
 .search_icon {
-	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABJUlEQVQ4T7WUgTEEQRBF30VACESADMhABogAESACMkAEiAARuBCIABmod9Wt5nZnhnJrqrZ2aqf7Tffv7p0x8Zo1eBvAAbBbnN8Dt8BHL4Ya8Ao4Dqc34BXYBtYCdgrctKBDoIZG9gCcBCx9jdbLtgCh7kerBB4C15GW+9paB54Cuhf7JbsSqDY+6tdbns8Dtj80TKAavfRSGTimNKMa5AdvugOqaVTCPQfOgJ2I9tvk34CTp2zIFuQd2PxFUdT7GWgWRUa2jYIfddrmMRp9pJ8+rcZ2zC4GgtvYlwEzGwto+zT7MA/K0dNRJzW2qT/DKMdwBO39HJQgfw7Os2DlsLGdliq0BfyhLouIq9C/Ar2wCl0FWELdK898VWBCfS8qPgVwSe8vc9dGFR12nYIAAAAASUVORK5CYII=") no-repeat;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABJUlEQVQ4T7WUgTEEQRBF30VACESADMhABogAESACMkAEiAARuBCIABmod9Wt5nZnhnJrqrZ2aqf7Tffv7p0x8Zo1eBvAAbBbnN8Dt8BHL4Ya8Ao4Dqc34BXYBtYCdgrctKBDoIZG9gCcBCx9jdbLtgCh7kerBB4C15GW+9paB54Cuhf7JbsSqDY+6tdbns8Dtj80TKAavfRSGTimNKMa5AdvugOqaVTCPQfOgJ2I9tvk34CTp2zIFuQd2PxFUdT7GWgWRUa2jYIfddrmMRp9pJ8+rcZ2zC4GgtvYlwEzGwto+zT7MA/K0dNRJzW2qT/DKMdwBO39HJQgfw7Os2DlsLGdliq0BfyhLouIq9C/Ar2wCl0FWELdK898VWBCfS8qPgVwSe8vc9dGFR12nYIAAAAASUVORK5CYII=") no-repeat;
     position: absolute;
     top: 12px;
     right: 32px;
@@ -64,6 +62,7 @@
 
 .phone {
     margin: 6px 10px 0;
+    text-align: center;
 }
 
 .phone .subtitle {
@@ -73,9 +72,8 @@
 }
 
 .label_sale {
-    margin: 7px 0 0 33px;	
-
-    .title{
+    margin: 7px 0 0 33px;
+    .title {
         font-weight: bold;
         text-transform: uppercase;
         font-size: 8.19pt;
@@ -83,12 +81,11 @@
 }
 
 .favorite_compare {
-    margin: 15px 0 0 43px;	
-    
+    margin: 15px 0 0 43px;
     .sprite-compare {
-	margin-left: 17px;
+        margin-left: 17px;
     }
-    .sprite{
+    .sprite {
         display: inline-block;
         position: relative;
         &:after {
@@ -112,20 +109,17 @@
 .basket {
     font-weight: bold;
     margin-top: 5px;
-    
     .basket_text {
         float: left;
         margin: 6px 0 0 15px;
         .title {
             font-size: 10pt;
         }
-
         .subtitle {
             font-size: 8pt;
             color: $gray_dark;
         }
     }
-    
     .sprite-basket {
         float: left;
         position: relative;
@@ -150,31 +144,182 @@
 
 nav {
     .container-fluid {
-	    background: $blue;
-    }
-    
-    .sprite-menu {
-        float: left;
-        margin-right: 10px;
-    }
-    
-    ul {
-        padding-left: 0;
-        &:after {
-            content: '';
-            display: block;
-            clear: both;
+        background: $blue;
+        position: relative;
+        .container {
+            position: static;
+            .sprite-menu {
+                float: left;
+                margin-right: 10px;
+            }
+            >ul {
+                padding-left: 0;
+                &:after {
+                    content: '';
+                    display: block;
+                    clear: both;
+                }
+                >li {
+                    .sub_menu {
+                        display: none;
+                        position: absolute;
+                        top: 62px;
+                        left: 0;
+                        z-index: 99;
+                        background: $white;
+                        border-bottom: 4px solid $orange;
+                        .section {
+                            li:last-child {
+                                font-size: 8pt;
+                                margin-top: 10px;
+                                a {
+                                    color: $gray_dark;
+                                }
+                            }
+                        }
+                    }
+                    &:first-child:hover {
+                        .sub_menu {
+                            display: block;
+                        }
+                    }
+                    >a {
+                        float: left;
+                        text-transform: uppercase;
+                        padding: 23px 13.5px;
+                        font-weight: bold;
+                        transition: all 0.5s ease;
+                        &:hover {
+                            background: $blue - 20;
+                        }
+                        &.active {
+                            background: $blue - 20;
+                        }
+                    }
+                }
+            }
+            .btn_menu {
+                display: none;
+                text-transform: uppercase;
+                padding: 17px 0;
+                color: $white;
+                font-weight: bold;
+            }
         }
     }
-    
-    a {
-        float: left;
-        text-transform: uppercase;
-        padding: 23px 13.5px;
-        font-weight: bold;
-        transition: all 0.5s ease;
-        &:hover {
-            background: $blue - 20;
+}
+
+@media screen and (max-width: 1200px) {
+    .sale {
+        display: none;
+    }
+    nav {
+        .container-fluid {
+            .container {
+                .btn_menu {
+                    display: block;
+                }
+                ul {
+                    display: none;
+                    li {
+                        &:first-child {
+                            border-top: 1px solid $blue - 20;
+                        }
+                        a {
+                            float: none;
+                            padding: 13px 30px;
+                            display: block;
+                            &:hover {
+                                background: $blue;
+                            }
+                        }
+                    }
+                    .sprite {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .compare {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .pure-search {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pure-top-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .basket {
+        .basket_text {
+            display: none;
+        }
+        .sprite-basket {
+            float: right;
+        }
+    }
+    .middle_container {
+        padding: 27px 0;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .basket {
+        float: right;
+        margin-top: -5px;
+        .sprite {
+            filter: invert(100%);
+            &:after {
+                content: '';
+                background: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .middle_container {
+        .phone {
+            .subtitle span {
+                width: 50%;
+                display: block;
+                margin: 0 auto;
+            }
+            .title {
+                font-size: 12pt;
+            }
+        }
+        .logo {
+            .title {
+                font-size: 18pt;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .middle_container {
+        .phone {
+            .subtitle span {
+                width: 65%;
+            }
+        }
+        .logo {
+            .title {
+                font-size: 15pt;
+            }
         }
     }
 }
