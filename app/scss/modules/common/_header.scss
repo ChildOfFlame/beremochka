@@ -233,6 +233,11 @@ nav {
                                 background: $blue;
                             }
                         }
+                        &:first-child:hover {
+                            .sub_menu {
+                                display: none;
+                            }
+                        }
                     }
                     .sprite {
                         display: none;
